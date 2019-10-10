@@ -133,7 +133,9 @@
       margin: inherit;
       display: flex;
     flex-direction: column;
-    align-items: center
+    align-items: center;
+    padding: 0
+
    }
 
 
