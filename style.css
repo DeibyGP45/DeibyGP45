@@ -1,38 +1,140 @@
-body {
+ * {
 
-    font-family: Verdana;
-    margin: 0;
-    background-color: antiquewhite
-}
+  /*  margin: 0;
+   padding: 0; */
+ }
 
-header {
-    background-color: #EC7357;
-    color: white;
-    font-family: 'Righteous', cursive;
-    padding: 0.8rem 0rem 0.5rem 2rem;
+ body {
+    background-color: #C8D3D5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
+ }
+
+ main {
+    margin: 0.8rem
+ }
+
+
+ header {
+    color: white;
+    background-color: #476C9B;
+    text-align: center;
+ }
+
+ ul {
+
+   list-style-type: none;
+
+ }
+
+ ul li {
+
+   display: inline-block;
+   padding: 1rem
+ }
+
+ h2,h3 {
+   margin: 1rem
+}
+ h1 {
+    font-size: 2rem;
+    padding: 1rem
+ }
+
+ h2 {
+    font-size: 1.5rem
+   }
+
+ h3{
+    font-size: 1.3rem
+   }
+
+
+ .pages {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+
+ }
+
+ p{
+    margin: 1rem
+   }
+
+
+ img {
+    max-width: 10rem;
+    margin: 1rem;
+ }
+
+ section{
+   /*  border: 1px black solid */
+ }
+
+ a {
+   text-decoration: inherit;
+   background-color: rgb(154, 255, 81);
+   padding: 1rem 2rem;
+   border-radius: 10px;
+   font-size: 1rem;
+   cursor: pointer;
+   color: black;
+   display: inline-block
+ }
+
+ footer {
+    padding: 1rem;
+   color: white;
+   background-color: #476C9B;
+   text-align: center;
 }
 
-header p {
-    font-size: 1.33rem;
-    }
+@media (min-width: 800px) {
 
-    main {
+   /* .multipages {
 
-        margin: 1rem
-    }
+      display: flex;
+   } */
 
-footer {
+   .pages {
+      margin: 0.5rem 15vh
+   }
 
-        font-family: calibri;
-        background-color: #6A2E35;
-        color: white;
-        padding: 1rem;
-        text-align: center;
-    }
+   .pages div {
 
-  a{
-        text-decoration: none;
-        display: block;
-        padding: 1rem;
-      }
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      padding: 0.5rem 10vh
+
+   }
+
+
+}
+
+@media (min-width: 1024px) {
+
+   .multipages {
+
+      display: flex;
+   }
+
+   .pages {
+      margin: 0.5rem;
+      display: flex;
+   }
+
+   .pages div {
+
+      margin: inherit;
+      display: flex;
+    flex-direction: column;
+    align-items: center
+   }
+
+
+}
